@@ -1,14 +1,16 @@
 import React from "react";
 import "./skills.css";
+import { Circle } from "rc-progress";
+import Progress from './progress-bar/ProgressBar';
 
 const Skills = () => {
   return (
     <div className="s">
-    <div className="container">
-     <h1>Skills</h1>
+      <div className="container">
+        <Progress />
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
