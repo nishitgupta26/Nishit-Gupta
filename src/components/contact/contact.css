@@ -1,0 +1,112 @@
+.c{
+    padding-left: 19%;;
+    padding-right: 10px;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.c-container{
+    padding-top: 25px;
+ padding-bottom: 0px;
+ padding-right: 50px;
+ width: 100%;
+}
+.contact-title{
+    padding-bottom :20px;
+}
+.contact-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    font-family: "Raleway", sans-serif;
+}
+.contact-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+.c-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-side{
+    display: flex;
+    align-items: stretch;
+}
+.right-side{
+    display: flex;
+    align-items: stretch;
+}
+.things{
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
+}
+.c-form{
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
+}
+.cont-icons{
+    font-size: 19px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #149ddd;
+    background: #dff3fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dff3fc;
+    float: left;
+}
+.icon-title{
+    padding-left:60px;
+    margin-bottom: 5px;
+    color: #050d18;
+    font-weight: 600;
+    font-size: 22px;
+}
+.icon-detail{
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #173b6c;
+}
+.address:hover .cont-icons {
+    background-color: #149DDD;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.email:hover .cont-icons {
+    background-color: #149DDD;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.phone:hover .cont-icons {
+    background-color: #149DDD;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+@media (max-width:768px){
+    .c{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .c-container{
+        padding-right: 15px;
+    }
+
+}

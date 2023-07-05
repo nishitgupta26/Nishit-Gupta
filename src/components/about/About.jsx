@@ -1,81 +1,78 @@
 import React from "react";
 import "./about.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import MeAbout from "../../img/Me-about.png";
+import AboutImag from "../../img/about-imag.jpg"
 import AwardImg from "../../img/award.png";
 const About = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, []) 
   return (
-    <div className="a">
-    <div className="container">
+    <div id="about" className="a">
+    <div className="a-container">
       {/* <div className="a-left"> */}
       <div className="upper">
         <h2 className="heading">About</h2>
-        <p className="desc">
-            kjdf ,vnxckjnvk , vkjlnfxk v,mdnfxkjvn,d fxmvkjxnv v,lfnhb dfxoihdf
-            bbnhdfnbnfdvdfclvndls vlknfxcvv vflknb vln vkjnvfklcxnv .
-        </p>
+        
       </div>
       <div className="details">
-        <div className=" col-lg-4 ">
+        <div className=" col-lg-4 aos-init aos-animate"  data-aos="fade-right" data-aos-delay='100' data-aos-duration='500'>
+        <div className=" left-one">
           <img
-            src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            src={AboutImag}
             alt="" className="about-img"
           />
         </div>
-        <div className=" col-lg-8 right">
+        </div>
+        <div className=" col-lg-8 aos-init aos-animate"  data-aos="fade-left" data-aos-delay='100' data-aos-duration='500'>
+        <div className=" right-one">
           <h3>Web-Developer & Competetive Coder</h3>
-          <p>kjdf ,vnxckjnvk , vkjlnfxk v,mdnfxkjvn,d fxmvkjxnv v,lfnhb dfxoihdf
-        bbnhdfnbnfdvdfclvndls vlknfxcvv vflknb vln vkjnvfklcxnv .</p>
-        <div class="row">
+          <p className="about-small-desc">Pre-Final Year student at LNMIIT pursuing B.Tech in Computer and Communication Engineering  </p>
+        <div class="a-row">
               <div className="col-lg-6">
                 <ul>
                   <li>
                     <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Birthday:</strong> 
-                    <span>13 Feb 2004</span>
+                    <strong className="strng">Age:</strong> 
+                    <span>19</span>
                   </li>
                   <li>
                     <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Website:</strong> 
-                    <span>www.nishitgupta.com</span>
+                    <strong className="strng">Phone:</strong> 
+                    <span>7073925626</span>
                   </li>
                   <li>
                     <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Phone:</strong> 
-                    <span>+91-7073925626</span>
+                    <strong className="strng">Website:</strong> 
+                    <span> www.nishitgupta.com</span>
                   </li>
+                </ul>
+              </div>
+              <div className="col-lg-6">
+                <ul>
                   <li>
                     <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>City:</strong> 
+                    <strong className="strng">Course:</strong> 
+                    <span>B.Tech in CCE</span>
+                  </li>
+                  <li>
+                  <i class="fa-solid fa-chevron-right"></i> 
+                    <strong className="strng">Email:</strong> 
+                    <span>21ucc070@lnmiit.ac.in</span>
+                  </li>
+                  
+                  <li>
+                    <i class="fa-solid fa-chevron-right"></i> 
+                    <strong className="strng">City:</strong> 
                     <span>Jaipur,Rajasthan</span>
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Degree:</strong> 
-                    <span>B.Tech</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Branch:</strong> 
-                    <span>CCE</span>
-                  </li>
-                  <li>
-                  <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Email:</strong> 
-                    <span>21ucc070@lnmiit.ac.in</span>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-chevron-right"></i> 
-                    <strong>Open To Work:</strong> 
-                    <span>Yes</span>
-                  </li>
-                </ul>
-              </div>
             </div>
-            <p className="bottom">Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+            <p className="bottom">Experienced and diligent B.Tech student with a strong focus on computer science. Skilled in  C++, HTML/CSS, and JavaScript, with familiarity in Java. Proficient in framework like React.js. Seeking opportunities to contribute to innovative projects and solve complex problems.Passionate about leveraging skills in software development to make a positive impact. Open to collaborations and discussing opportunities.</p>
+        </div>
         </div>
       </div>
 
