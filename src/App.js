@@ -8,13 +8,11 @@ import Contact from './components/contact/Contact';
 function App() {
   return (
     <div className="App">
-        <div>
         <Intro />
         <About />
         <Skills />
         <Resume />
         <Contact />
-        </div>
     </div>
   );
 }

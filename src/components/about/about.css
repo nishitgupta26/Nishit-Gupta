@@ -1,3 +1,4 @@
+
 .a{
     width: 100%;
     height: 100%;
@@ -7,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+    overflow-wrap: break-word;
 }
 .a-container{
        padding-top: 25px;
@@ -40,14 +42,21 @@ ul{
     list-style: none;
     padding-left: 0px;
 }
+.details{
+    display: flex;
+}
 .left-one{
-    border-radius: 25px;
-    margin-top: 20px;
-    padding: 0px ;
-    background: #fff;
-    box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
+    width : 33.33%;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: fit-content;
 }
 .right-one{
+    width : 66.67%;
+    padding-right: 20px;
+   padding-left: 20px;
+}
+.rightsmall{
     border-radius: 25px;
     margin-top: 20px;
     padding: 31px 30px 30px 30px;
@@ -62,13 +71,22 @@ ul{
     border-radius: 25px;
     max-width: 100%;
     height: min-content;
+    margin-top: 20px;
+    padding: 0px ;
+    background: #fff;
+    box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
 }
 .a-row{
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
 }
-
+.a-row-left{
+    overflow-wrap: anywhere;
+}
+.a-row-right{
+    overflow-wrap: anywhere;
+}
 li{
     margin-bottom: 20px;
     display: flex;
@@ -77,6 +95,7 @@ li{
 .strng{
     margin-right: 10px;
     margin-left: 10px;
+    overflow-wrap: normal;
 }
 
 .bottom{

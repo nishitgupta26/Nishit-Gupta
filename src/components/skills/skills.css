@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+    overflow-wrap: break-word;
 }
 .s-container{
     padding-top: 25px;

@@ -1,10 +1,11 @@
 .c{
-    padding-left: 19%;;
+    padding-left: 19%;
     padding-right: 10px;
     /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center; 
+    overflow-wrap: break-word;
 }
 .c-container{
     padding-top: 25px;
@@ -38,12 +39,17 @@
 .c-row{
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 10px 30px;
 }
 .left-side{
+    width: 42%;
+    padding: 10px;
     display: flex;
     align-items: stretch;
 }
 .right-side{
+    padding: 10px;
+    width: 58%;
     display: flex;
     align-items: stretch;
 }
@@ -85,6 +91,15 @@
     font-size: 15px;
     color: #173b6c;
 }
+.address{
+    overflow-wrap: anywhere;
+}
+.email{
+    overflow-wrap: break-word;
+}
+.phone{
+    overflow-wrap: break-word;
+}
 .address:hover .cont-icons {
     background-color: #149DDD;
     color: white;
@@ -108,5 +123,14 @@
     .c-container{
         padding-right: 15px;
     }
+    .left-side{
+        width: 100%;
+        
+    }
+    .right-side{
+        width: 100%;
+
+    }
+   
 
 }
