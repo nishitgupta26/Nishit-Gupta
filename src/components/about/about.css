@@ -101,7 +101,7 @@ li{
 .bottom{
     font-size: 17px;
 }
-@media (max-width:768px){
+@media (max-width:1200px){
     .a{
         padding-left: 0px;
         padding-right: 0px;

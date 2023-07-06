@@ -1,5 +1,5 @@
 .r{
-    padding-left: 19%;;
+    padding-left: 300px;
     padding-right: 10px;
     /* position: absolute; */
     display: flex;
@@ -91,7 +91,7 @@
     background: #fff;
     border: 2px solid #1f5297;
 }
-@media (max-width:768px){
+@media (max-width:1200px){
     .r{
         padding-left: 0px;
     }

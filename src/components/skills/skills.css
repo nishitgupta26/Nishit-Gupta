@@ -1,6 +1,6 @@
 .s{
     /* color: white; */
-    padding-left: 19%;;
+    padding-left: 300px;
     padding-right: 10px;
     /* position: absolute; */
     display: flex;
@@ -88,7 +88,7 @@ p{
     justify-content: center;
     overflow: hidden;
 }
-@media (max-width:768px){
+@media (max-width:1200px){
     .s{
         padding-left: 0px;
     }
