@@ -44,6 +44,8 @@ ul{
 }
 .details{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .left-one{
     width : 33.33%;
