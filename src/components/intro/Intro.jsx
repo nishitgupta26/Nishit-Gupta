@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import ReactDOM from "react-dom/client";
 import "./intro.css";
 import AOS from "aos";
@@ -12,6 +12,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
 
 const Intro = () => {
+  const menuElement = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);  
   const getMenuStyles = (menuOpened) => {
     if(document.documentElement.clientWidth <= 1201){
@@ -51,13 +52,19 @@ const Intro = () => {
               <span class="text">MENU</span>
             </button> 
           </div> */}
-          <div className="menu-icon" on onClick={()=>setMenuOpened((prev)=>!prev)}>
+          <div className="menu-icon" id="menu"
+          ref={menuElement}
+          onClick={()=>{setMenuOpened((prev)=>!prev);
+          }}
+          >
               <BiMenuAltRight size={30} />
             </div>
           <div className="m-container">
           <OutsideClickHandler
-          onOutsideClick={()=>
-          setMenuOpened(false)}>
+          onOutsideClick={(e)=>{
+            // console.log(menuElement.current.contains(e.target));
+            !menuElement.current.contains(e.target) && setMenuOpened(false)
+          }}>
             <div className="m-menu" style={getMenuStyles(menuOpened)}>
               <a href="">Home</a>
               <a href="">About</a>
