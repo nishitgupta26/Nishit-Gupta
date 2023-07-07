@@ -108,9 +108,8 @@ li{
         padding-left: 0px;
         padding-right: 0px;
     }
-    
     .a-container{
-        padding-right: 15px;
+        padding: 25px 15px 0px 15px;
     }
     .a-row{
         font-size: 15px;
