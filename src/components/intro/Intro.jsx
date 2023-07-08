@@ -43,12 +43,12 @@ const Intro = () => {
             !menuElement.current.contains(e.target) && setMenuOpened(false)
           }}>
             <div className="m-menu" style={getMenuStyles(menuOpened)}>
-              <a href="">Home</a>
-              <a href="">About</a>
-              <a href="">Skills</a>
-              <a href="">Resume</a>
-              <a href="">Education</a>
-              <a href="">Contact Us</a>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#resume">Resume</a>
+              <a href="#resume">Education</a>
+              <a href="#contact">Contact Us</a>
             </div>
           </OutsideClickHandler>
           </div>
@@ -56,7 +56,7 @@ const Intro = () => {
 
         </div>
         <div className="i-right-wrapper">
-          <h2 className="i-intro">Hello,I am </h2>
+          <h2 className="i-intro">Hello, I am </h2>
           <h1 className="i-name">Nishit Gupta</h1>
           <div className="i-title">
             <div className="i-title-wrapper">

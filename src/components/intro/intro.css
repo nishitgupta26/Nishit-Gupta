@@ -25,7 +25,7 @@ body {
     display: none;
 }
 .portfolio{
-    padding: 20px 0px 0px 20px;
+    padding: 5px 0px 0px 20px;
 }
 .menu-btn{
     display: inline-block;
@@ -301,7 +301,7 @@ body {
         overflow-x: hidden;
     }
     .i-right-wrapper{
-        padding: 50px 20px 50px 80px;
+        padding: 70px 20px 50px 50px;
         height: 100vh;
     }
     .right-upper{
@@ -310,6 +310,7 @@ body {
     .portfolio{
         display: inline-block;
         color: white;
+        letter-spacing: 2.5px;
     }
     .menu-btn{
         /* display: inline-block; */
@@ -321,7 +322,7 @@ body {
         display: block;
         float: right;
         padding: 5px 20px 0px 0px;
-        margin: 30px 0px 0px 0px;
+        margin: 16px 0px 0px 0px;
     }
     .m-menu{
         color: rgb(224, 15, 15);
@@ -341,8 +342,13 @@ body {
     }
     .i-intro{
         font-size: 20px;
+        padding-left: 15px;
     }
     .i-name{
         font-size: 40px;
+        padding-left: 15px;
+    }
+    .i-title {
+        padding-left: 15px;
     }
 }
