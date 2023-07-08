@@ -78,16 +78,16 @@ const Intro = () => {
           </div>
           <div className="i-s-links">
             <button  class="i-s-links-h">
-            <a href="#" className="sp"><i class="bx bxl-github"></i></a>  
+            <a href="https://github.com/WarBeast26" target="__blank" className="sp"><i class="bx bxl-github"></i></a>  
             </button>
             <button  class="i-s-links-h">
-            <a href="#" className="sp"><i class="bx bxl-linkedin"></i></a>  
+            <a href="https://www.linkedin.com/in/nishitgupta26" target="__blank" className="sp"><i class="bx bxl-linkedin"></i></a>  
             </button>
             <button  class="i-s-links-h">
             <a href="#" className="sp"><i class="bx bxl-facebook"></i></a>  
             </button>
             <button  class="i-s-links-h">
-            <a href="#" className="sp"><i class="bx bxl-instagram"></i></a>  
+            <a href="https://instagram.com/garg_nishit_26?igshid=MzNlNGNkZWQ4Mg==" target="__blank" className="sp"><i class="bx bxl-instagram"></i></a>  
             </button>
           </div>
         </div>
