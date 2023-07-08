@@ -28,30 +28,7 @@ const Intro = () => {
       <div className="i-right">
         <div className="right-upper">
           <h2 className="portfolio">PORTFOLIO</h2>
-          {/* <div className="menu-btn">
-             <button class="m-btn">
-              <span class="m-icon">
-                <svg viewBox="0 0 175 80" width="40" height="40">
-                  <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                  <rect
-                    y="30"
-                    width="80"
-                    height="15"
-                    fill="#f0f0f0"
-                    rx="10"
-                  ></rect>
-                  <rect
-                    y="60"
-                    width="80"
-                    height="15"
-                    fill="#f0f0f0"
-                    rx="10"
-                  ></rect>
-                </svg>
-              </span>
-              <span class="text">MENU</span>
-            </button> 
-          </div> */}
+          
           <div className="menu-icon" id="menu"
           ref={menuElement}
           onClick={()=>{setMenuOpened((prev)=>!prev);

@@ -130,6 +130,11 @@
         width: 100%;
 
     }
-   
+    .icon-title {
+        font-size: 19px;
+    }
+    .icon-detail {
+        font-size: 14px;
+    }
 
 }

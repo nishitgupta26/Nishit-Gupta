@@ -98,5 +98,16 @@
     .r-container{
         padding: 25px 15px 0px 15px;
     }
-
+    .resume-title{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .resume-item h4 {
+        line-height: 15px;
+        font-size: 16px;
+    }
+    .resume-item h5 {
+        font-size: 14px;
+        font-weight: 550;
+    }
 }
