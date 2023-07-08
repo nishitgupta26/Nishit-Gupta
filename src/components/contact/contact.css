@@ -118,10 +118,9 @@
 @media (max-width:1200px){
     .c{
         padding-left: 0px;
-        padding-right: 0px;
     }
     .c-container{
-        padding-right: 15px;
+        padding: 25px 15px 0px 15px;
     }
     .left-side{
         width: 100%;
