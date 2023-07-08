@@ -59,7 +59,7 @@ ul{
    padding-left: 20px;
 }
 .rightsmall{
-    border-radius: 25px;
+    border-radius: 20px;
     margin-top: 20px;
     padding: 31px 30px 30px 30px;
     background: #fff;
@@ -70,7 +70,7 @@ ul{
 }
 .about-img{
     /* padding-right: 10px; */
-    border-radius: 25px;
+    border-radius: 20px;
     max-width: 100%;
     height: min-content;
     margin-top: 20px;
@@ -113,5 +113,30 @@ li{
     }
     .a-row{
         font-size: 15px;
+    }
+    .details{
+        flex-direction: column;
+    }
+    .left-one{
+        width: 100%;
+    }
+    .right-one{
+        width: 100%;
+    }
+    .rightsmall h3{
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .about-small-desc {
+        font-size: 16px;
+        color: #537173;
+    }
+    .strng {
+        font-weight: 600;
+    }
+    .bottom {
+        font-size: 15px;
+        letter-spacing: 1.3;
+        line-height: 24px;
     }
 }

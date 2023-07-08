@@ -54,6 +54,7 @@
     align-items: stretch;
 }
 .things{
+    border-radius: 20px;
     width: 100%;
     padding: 30px;
     background: #fff;
@@ -61,6 +62,7 @@
 }
 .c-form{
     width: 100%;
+    border-radius: 20px;
     padding: 30px;
     background: #fff;
     box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
