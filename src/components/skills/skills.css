@@ -55,7 +55,6 @@ p{
     height: 80px;
     display: block;
     background: none;
-    border-radius: 0;
     padding: 10px;
     border-radius: 25px;
     box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
@@ -94,6 +93,20 @@ p{
     }
     .s-container{
         padding: 25px 15px 0px 15px;
+    }
+    .skill{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .progress{
+        height: 60px;
+        border-radius: 15px;
+    }
+    .progress-bar-wrap{
+        height: 10px;
+    }
+    .progress-bar{
+        height: 10px;
     }
 
 }
