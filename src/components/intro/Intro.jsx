@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import "./intro.css";
 import AOS from "aos";
@@ -13,12 +13,12 @@ import OutsideClickHandler from "react-outside-click-handler";
 
 const Intro = () => {
   const menuElement = useRef(null);
-  const [menuOpened, setMenuOpened] = useState(false);  
+  const [menuOpened, setMenuOpened] = useState(false);
   const getMenuStyles = (menuOpened) => {
-    if(document.documentElement.clientWidth <= 1201){
-      return{right: !menuOpened && "-100%"}
+    if (document.documentElement.clientWidth <= 1201) {
+      return { right: !menuOpened && "-100%" };
     }
-  }
+  };
   React.useEffect(() => {
     AOS.init();
   }, []);
@@ -28,32 +28,34 @@ const Intro = () => {
       <div className="i-right">
         <div className="right-upper">
           <h2 className="portfolio">PORTFOLIO</h2>
-          
-          <div className="menu-icon" id="menu"
-          ref={menuElement}
-          onClick={()=>{setMenuOpened((prev)=>!prev);
-          }}
-          >
-              <BiMenuAltRight size={30} />
-            </div>
-          <div className="m-container">
-          <OutsideClickHandler
-          onOutsideClick={(e)=>{
-            // console.log(menuElement.current.contains(e.target));
-            !menuElement.current.contains(e.target) && setMenuOpened(false)
-          }}>
-            <div className="m-menu" style={getMenuStyles(menuOpened)}>
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#skills">Skills</a>
-              <a href="#resume">Resume</a>
-              <a href="#resume">Education</a>
-              <a href="#contact">Contact Us</a>
-            </div>
-          </OutsideClickHandler>
-          </div>
-          
 
+          <div
+            className="menu-icon"
+            id="menu"
+            ref={menuElement}
+            onClick={() => {
+              setMenuOpened((prev) => !prev);
+            }}
+          >
+            <BiMenuAltRight size={30} />
+          </div>
+          <div className="m-container">
+            <OutsideClickHandler
+              onOutsideClick={(e) => {
+                // console.log(menuElement.current.contains(e.target));
+                !menuElement.current.contains(e.target) && setMenuOpened(false);
+              }}
+            >
+              <div className="m-menu" style={getMenuStyles(menuOpened)}>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <a href="#resume">Education</a>
+                <a href="#contact">Contact Us</a>
+              </div>
+            </OutsideClickHandler>
+          </div>
         </div>
         <div className="i-right-wrapper">
           <h2 className="i-intro">Hello, I am </h2>
@@ -73,6 +75,20 @@ const Intro = () => {
             <a href="#">
               <button className="button button-2">Hire Me</button>
             </a>
+          </div>
+          <div className="i-s-links">
+            <button  class="i-s-links-h">
+            <a href="#" className="sp"><i class="bx bxl-github"></i></a>  
+            </button>
+            <button  class="i-s-links-h">
+            <a href="#" className="sp"><i class="bx bxl-linkedin"></i></a>  
+            </button>
+            <button  class="i-s-links-h">
+            <a href="#" className="sp"><i class="bx bxl-facebook"></i></a>  
+            </button>
+            <button  class="i-s-links-h">
+            <a href="#" className="sp"><i class="bx bxl-instagram"></i></a>  
+            </button>
           </div>
         </div>
       </div>
