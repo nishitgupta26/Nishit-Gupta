@@ -44,6 +44,10 @@
 .c-logo {
     padding: 12px;
     font-size: 15px;
+    text-decoration: none;
+}
+.c-logo:hover{
+    text-decoration: none;
 }
 .icon-background{
     content: "";
