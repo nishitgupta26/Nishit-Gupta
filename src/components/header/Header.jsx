@@ -11,11 +11,7 @@ const header = () => {
             <img src={LeftMe} alt="" className="i-left-img" />
             <h3 className="i-left-name">Nishit Gupta</h3>
             <div className="i-social">
-              <a href="https://twitter.com/Nishit_5626?t=NRmW_tgWv1A56QY-GeshtA&s=09" className="c-logo twitter" target="__blank">
-              <div className="icon-background">
-              <i class='bx bxl-twitter social-icon'></i>
-              </div>
-              </a>
+              
               <a href="https://github.com/WarBeast26" className=" c-logo github" target="__blank">
               <div className="icon-background">
               <i class='bx bxl-github social-icon' ></i>
@@ -24,6 +20,11 @@ const header = () => {
               <a href="https://www.linkedin.com/in/nishitgupta26" className="c-logo linkedin" target="__blank">
               <div className="icon-background">
               <i class='bx bxl-linkedin social-icon' ></i>
+              </div>
+              </a>
+              <a href="https://wa.me/7073925626" className="c-logo twitter" target="__blank">
+              <div className="icon-background">
+              <i class='bx bxl-whatsapp social-icon'></i>
               </div>
               </a>
               <a href="https://instagram.com/garg_nishit_26?igshid=MzNlNGNkZWQ4Mg==" className="c-logo instagram" target="__blank">
@@ -69,8 +70,9 @@ const header = () => {
               </div>
               <div class="credits">
                 <span>
-                  Designed By
-                  <a href="www.nishitgupta.com"> Nishit Gupta</a>
+                  Developed By
+                  {/* <br /> */}
+                  <a href="https://nishitgupta.com"> Nishit Gupta</a>
                 </span>
               </div>
             </div>

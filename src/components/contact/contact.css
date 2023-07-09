@@ -44,11 +44,13 @@
 .left-side{
     width: 42%;
     padding: 10px;
+    padding-right: 20px;
     display: flex;
     align-items: stretch;
 }
 .right-side{
     padding: 10px;
+    padding-left: 20px;
     width: 58%;
     display: flex;
     align-items: stretch;
@@ -76,7 +78,7 @@
 .c-s-links-min{
     border-radius: 20px;
     width: 100%;
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     background: #fff;
     box-shadow: 0 0 25px 0px rgba(0,0,0,0.15);
     /* display: flex; */

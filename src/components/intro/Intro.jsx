@@ -84,7 +84,7 @@ const Intro = () => {
             <a href="https://www.linkedin.com/in/nishitgupta26" target="__blank" className="sp"><i class="bx bxl-linkedin"></i></a>  
             </button>
             <button  class="i-s-links-h">
-            <a href="#" className="sp"><i class="bx bxl-facebook"></i></a>  
+            <a href="https://wa.me/7073925626" className="sp"><i class="bx bxl-whatsapp"></i></a>  
             </button>
             <button  class="i-s-links-h">
             <a href="https://instagram.com/garg_nishit_26?igshid=MzNlNGNkZWQ4Mg==" target="__blank" className="sp"><i class="bx bxl-instagram"></i></a>  
