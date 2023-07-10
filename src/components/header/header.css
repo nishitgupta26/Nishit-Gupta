@@ -80,7 +80,13 @@
 
 }
 
-
+.i-container {
+    /* margin: 0px; */
+    padding-top: 25px;
+    padding-bottom: 0px;
+    padding-right: 25px;
+    width: 100%;
+}
 .menu {
     display: flex;
     align-items: center;

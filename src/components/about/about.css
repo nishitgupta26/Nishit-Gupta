@@ -103,6 +103,17 @@ li{
 .bottom{
     font-size: 17px;
 }
+@media (max-width:768px){
+    .details{
+        flex-direction: column;
+    }
+    .left-one{
+        width: 100%;
+    }
+    .right-one{
+        width: 100%;
+    }
+}
 @media (max-width:1200px){
     .a{
         padding-left: 0px;
@@ -114,15 +125,7 @@ li{
     .a-row{
         font-size: 15px;
     }
-    .details{
-        flex-direction: column;
-    }
-    .left-one{
-        width: 100%;
-    }
-    .right-one{
-        width: 100%;
-    }
+    
     .rightsmall h3{
         font-size: 20px;
         margin-top: 0px;
