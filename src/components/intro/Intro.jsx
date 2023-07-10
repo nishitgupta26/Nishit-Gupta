@@ -72,7 +72,7 @@ const Intro = () => {
             <a href={CV} download="Resume_Nishit-Gupta">
               <button className="button button-1">Download CV</button>
             </a>
-            <a href="#">
+            <a href="mailto:nishitgupta222@gmail.com" target="__blank">
               <button className="button button-2">Hire Me</button>
             </a>
           </div>
