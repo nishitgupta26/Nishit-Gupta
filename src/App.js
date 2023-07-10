@@ -22,7 +22,7 @@ function App() {
       loading ?
       <div className="app-loader">
       <HashLoader
-        color={"#173B6C"}
+        color={"#172A8D"}
         loading={loading}
         // css={override}
         size={60}

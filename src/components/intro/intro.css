@@ -288,7 +288,7 @@ body {
 }
 @media (max-width:1200px){
     .i-right{
-        /* height:100vh; */
+        height:100%;
         padding-left: 0px;
         margin-bottom: 1px;
         overflow-y: hidden;
@@ -296,7 +296,7 @@ body {
     }
     .i-right-wrapper{
         padding: 70px 20px 50px 20px;
-        height: 100vh;
+        height: 100%;
     }
     .right-upper{
         display: block;
@@ -412,4 +412,22 @@ body {
         color: #efdddd;
         text-decoration: none;
       }
+      .i-title-wrapper {
+        animation: move1 8s ease-in-out infinite alternate;
+    }
+    
+    @keyframes move1 {
+      25% {
+        transform: translateY(-65px);
+    }
+    50% {
+        transform: translateY(-115px);
+    }
+    75% {
+        transform: translateY(-165px);
+    }
+    100% {
+        transform: translateY(-215px);
+    }
+}
 }
