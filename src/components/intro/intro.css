@@ -10,7 +10,7 @@ body {
 .i-right {
     width: 100%;
     /* height: 100vh; */
-    min-height: 100vh;
+    min-height: 100svh;
     height: max-content;
     padding-bottom: 5%;
     padding-left: 300px;
