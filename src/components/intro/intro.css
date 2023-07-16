@@ -115,6 +115,7 @@ body {
     font-family: 'Raleway', sans-serif;
     padding-bottom: 25px;
     color: rgb(255, 255, 255);
+    letter-spacing: 2px;
 }
 
 .i-title {
@@ -345,6 +346,7 @@ body {
         font-size: 40px;
         padding-left: 45px;
         padding-top: 15px;
+        letter-spacing: 1px;
     }
     .i-title {
         padding-left: 45px;
