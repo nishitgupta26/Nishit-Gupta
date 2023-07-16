@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "../header/Header";
 import LeftMe from "../../img/Nishit_PIC-modified.png";
-import Me from "../../img/Me.png";
+// import Me from "../../img/Me.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CV from "../../Files/Resume_NISHIT-GUPTA.pdf";
 import { BiMenuAltRight } from "react-icons/bi";

@@ -2,9 +2,8 @@ import React from "react";
 import "./about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import MeAbout from "../../img/Me-about.png";
+// import MeAbout from "../../img/Me-about.png";
 import AboutImag from "../../img/about-imag.jpg";
-import AwardImg from "../../img/award.png";
 const About = () => {
   React.useEffect(() => {
     AOS.init();

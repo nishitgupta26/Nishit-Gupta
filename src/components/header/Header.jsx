@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import LeftMe from "../../img/Nishit_PIC-modified.png" ;
-import Me from "../../img/Me.png";
+// import Me from "../../img/Me.png";
 const header = () => {
   return ( 
     <div>
