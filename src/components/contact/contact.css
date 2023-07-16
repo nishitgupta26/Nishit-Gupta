@@ -197,6 +197,12 @@
         width: 100%;
 
     }
+    .things{
+        padding: 30px 25px;
+    }
+    .c-form{
+        padding: 30px 25px ;
+    }
     .icon-title {
         font-size: 19px;
     }
