@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CV from "../../Files/Resume_NISHIT-GUPTA.pdf";
 import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
+import NGlogo from "../../img/ng.png";
 
 const Intro = () => {
   const menuElement = useRef(null);
@@ -27,7 +28,7 @@ const Intro = () => {
       <Header />
       <div className="i-right">
         <div className="right-upper">
-          <h2 className="portfolio">PORTFOLIO</h2>
+          <img src={NGlogo} className="portfolio" />
 
           <div
             className="menu-icon"

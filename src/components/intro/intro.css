@@ -29,7 +29,7 @@ body {
 }
 .portfolio{
     padding: 5px 0px 0px 20px;
-}
+} 
 .menu-btn{
     display: inline-block;
     padding: 20px 20px 0px 0px ;
@@ -306,8 +306,8 @@ body {
     }
     .portfolio{
         display: inline-block;
-        color: white;
-        letter-spacing: 2.5px;
+        margin-top: 20px;
+        height: 5vh;
     }
     .menu-btn{
         /* display: inline-block; */
