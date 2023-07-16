@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useLayoutEffect, useRef } from "react";
 
 import "./Loading.css";
 
@@ -17,7 +17,7 @@ const Loading = () => {
 
   const [tl1] = useState(new TimelineLite({ paused: false }));
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     tl1.to(item.current, {
           y: 0,
           stagger: 0.1,
