@@ -87,6 +87,7 @@ ul{
     overflow-wrap: anywhere;
 }
 .a-row-right{
+    padding-left: 8px;
     overflow-wrap: anywhere;
 }
 li{
@@ -128,6 +129,9 @@ li{
     }
     .a-row{
         font-size: 15px;
+    }
+    .a-row-right{
+        padding-left: 0px;
     }
     
     .rightsmall h3{
