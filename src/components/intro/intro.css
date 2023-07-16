@@ -195,9 +195,9 @@ body {
     min-width: 200px;
     min-height: 50px;
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
+    font-size: 20px;
+    /* text-transform: uppercase; */
+    letter-spacing: 1.4px;
     font-weight: 700;
     color: #313133;
     background: #4FD1C5;
