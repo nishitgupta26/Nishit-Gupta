@@ -39,11 +39,11 @@
 .c-row{
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 10px 30px;
+    padding-bottom:30px;
 }
 .left-side{
     width: 42%;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
     display: flex;
     align-items: stretch;
 }
@@ -191,7 +191,7 @@
     }
     .left-side{
         width: 100%;
-        
+        padding: 10px;
     }
     .right-side{
         width: 100%;

@@ -49,14 +49,14 @@ ul{
 }
 .left-one{
     width : 33.33%;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     height: fit-content;
 }
 .right-one{
     width : 66.67%;
-    padding-right: 20px;
-   padding-left: 20px;
+    padding-right: 15px;
+   padding-left: 15px;
 }
 .rightsmall{
     border-radius: 20px;
@@ -109,9 +109,13 @@ li{
     }
     .left-one{
         width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .right-one{
         width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 @media (max-width:1200px){
