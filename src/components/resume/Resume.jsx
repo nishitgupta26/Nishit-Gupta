@@ -27,7 +27,7 @@ const Resume = () => {
                   </em>
                 </p>
                 <p>
-                  CGPA(till 3rd sem) : <strong>6.69</strong>
+                  CGPA(till 4th sem) : <strong>6.83</strong>
                 </p>
               </div>
               <div class="resume-item">
