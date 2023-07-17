@@ -3,7 +3,6 @@ import React, { useState, useLayoutEffect, useRef } from "react";
 import "./Loading.css";
 
 import { gsap } from "gsap";
-import { Power3 } from "gsap";
 import { TimelineLite } from "gsap/gsap-core.js";
 import { CSSPlugin } from "gsap/CSSPlugin";
 
