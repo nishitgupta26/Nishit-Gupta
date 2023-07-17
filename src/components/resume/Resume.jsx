@@ -10,7 +10,7 @@ const Resume = () => {
     <div  id="resume" className="r">
       <div className="r-container">
         <div class="r-section-title">
-          <h2>Resume</h2>
+          <h2 className="heading">Resume</h2>
 
           <div class="r-row">
             <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>

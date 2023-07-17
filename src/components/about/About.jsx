@@ -1,15 +1,40 @@
-import React from "react";
+import React,{useRef} from "react";
 import "./about.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import MeAbout from "../../img/Me-about.png";
 import AboutImag from "../../img/about-imag.jpg";
+
+
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
 const About = () => {
+  gsap.registerPlugin(CSSPlugin,ScrollTrigger);
+
+  const comp = useRef();
+
+  React.useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      // use scoped selectors
+      // gsap.to(".left-one", { opacity:0,
+      //    delay: 1,
+      //   duration: 2,
+      //   scrollTrigger: {
+      //     trigger: ".left-one",scrub: true,markers:true
+      //   } });
+      
+    }, comp);
+    
+    return () => ctx.revert();
+    
+  }, []);
+
   React.useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div id="about" className="a">
+    <div id="about" ref={comp} className="a">
       <div className="a-container">
         {/* <div className="a-left"> */}
         <div className="upper">

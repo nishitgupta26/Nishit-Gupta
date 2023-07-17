@@ -1,8 +1,45 @@
 html {
     scroll-behavior: smooth;
 }
-@font-face {
-    font-family: "Insta"; /*Can be any text*/
-    src: local("Insta"),
-      url("./fonts/Insta.ttf") format("truetype");
-  }
+
+/* ......NEW DESIGN CHGS........ */
+
+body{
+    background-color: #000336;
+}
+.a *,.s *,.r *,.i-right *,.i-social *{
+    border-radius: 0px !important;
+    box-shadow: none;
+}
+.c *{
+    border-radius: 0px !important;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.811);
+    box-shadow: none;
+}
+.things,.c-form,.progress,.rightsmall,.c-s-links-min{
+    border: 1px dashed #76B1DD;
+}
+.rightsmall,.fa-chevron-right{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.811);
+}
+.heading{
+    text-align: center;
+    color: #59B256 !important;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+    font-style: "Poppins";
+}
+.skill,.resume-title{
+    color: #76B1DD;
+}
+.r h4{
+    color: #76b0ddd3 ;
+}
+.r p{
+    color: rgba(255, 255, 255, 0.811);
+}
+.menu{
+    color: rgba(255, 255, 255, 0.737);;
+}

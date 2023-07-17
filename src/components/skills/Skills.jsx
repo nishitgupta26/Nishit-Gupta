@@ -11,7 +11,7 @@ const Skills = () => {
     <div  id="skills" className="s">
       <div className="s-container">
       <div class="section-title">
-          <h2>Skills</h2>
+          <h2 className="heading">Skills</h2>
         </div>
         <div class="row skills-content">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>
