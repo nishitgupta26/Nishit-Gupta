@@ -41,13 +41,13 @@
     flex-wrap: wrap;
     padding-bottom:30px;
 }
-.left-side{
+.c-left-side{
     width: 42%;
     padding: 10px 15px;
     display: flex;
     align-items: stretch;
 }
-.right-side{
+.c-right-side{
     padding: 10px 15px 10px 15px;
     width: 58%;
     display: flex;
@@ -189,16 +189,15 @@
     .c-container{
         padding: 25px 15px 0px 15px;
     }
-    .left-side{
+    .c-left-side{
         width: 100%;
-        padding: 10px;
     }
-    .right-side{
+    .c-right-side{
         width: 100%;
 
     }
     .things{
-        padding: 30px 25px;
+        padding: 25px 20px;
     }
     .c-form{
         padding: 30px 25px ;
