@@ -56,7 +56,7 @@ const About = () => {
             data-aos-duration="500"
           >
             <div className=" rightsmall">
-              <h3>Web-Developer & Competetive Coder</h3>
+              <h3 className="rightsmall-head">Web-Developer & Competetive Coder</h3>
               <p className="about-small-desc">
                 Pre-Final Year student at LNMIIT pursuing B.Tech in Computer and
                 Communication Engineering{" "}
