@@ -94,6 +94,7 @@
 @media (max-width:1200px){
     .r{
         padding-left: 0px;
+        padding-right: 0px;
     }
     .r-container{
         padding: 25px 15px 0px 15px;

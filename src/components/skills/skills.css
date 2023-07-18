@@ -90,6 +90,7 @@ p{
 @media (max-width:1200px){
     .s{
         padding-left: 0px;
+        padding-right: 0px;
     }
     .s-container{
         padding: 25px 15px 0px 15px;
