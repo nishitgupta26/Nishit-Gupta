@@ -1,23 +1,18 @@
 import React from "react";
 import "./contact.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ArrowRight, GeoAlt } from "react-bootstrap-icons";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CForm from "./CForm.jsx";
 
 const Contact = () => {
-  React.useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div id="contact" className="c">
       <div className="c-container">
         <div class="contact-title">
           <h2 className="heading">Contact Us</h2>
         </div>
-        <div className="c-row aos-init aos-animate" data-aos="fade-up">
+        <div className="c-row" data-aos="fade-up">
           <div className="c-left-side">
             <div class="things">
               <div class="address">

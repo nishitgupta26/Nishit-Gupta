@@ -1,7 +1,5 @@
 import React,{useRef} from "react";
 import "./about.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import AboutImag from "../../img/about-imag.jpg";
 
 
@@ -30,9 +28,6 @@ const About = () => {
     
   }, []);
 
-  React.useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div id="about" ref={comp} className="a">
       <div className="a-container">
@@ -42,7 +37,7 @@ const About = () => {
         </div>
         <div className="details">
           <div
-            className=" left-one aos-init aos-animate"
+            className=" left-one"
             data-aos="fade-right"
             data-aos-delay="100"
             data-aos-duration="500"
@@ -50,7 +45,7 @@ const About = () => {
             <img src={AboutImag} alt="" className="about-img" />
           </div>
           <div
-            className=" right-one aos-init aos-animate"
+            className=" right-one"
             data-aos="fade-left"
             data-aos-delay="100"
             data-aos-duration="500"

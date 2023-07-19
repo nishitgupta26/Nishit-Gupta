@@ -1,8 +1,6 @@
 import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import "./intro.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Header from "../header/Header";
 import LeftMe from "../../img/Nishit_PIC-modified.png";
 // import Me from "../../img/Me.png";
@@ -20,9 +18,6 @@ const Intro = () => {
       return { right: !menuOpened && "-100%" };
     }
   };
-  React.useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div id="home" className="i">
       <Header />

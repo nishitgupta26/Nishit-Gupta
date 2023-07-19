@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./skills.css";
-import { Circle } from "rc-progress";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 const Skills = () => {
-  React.useEffect(() => {
-    AOS.init();
-  }, []) 
   return (
     <div  id="skills" className="s">
       <div className="s-container">
@@ -14,7 +8,7 @@ const Skills = () => {
           <h2 className="heading">Skills</h2>
         </div>
         <div class="row skills-content">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 aos-init aos-animate" data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>
             <div class="progress">
               <span class="skill">HTML 
               {/* <i class="val">100%</i> */}
@@ -63,7 +57,7 @@ const Skills = () => {
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 aos-init aos-animate"
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"
             data-aos="fade-up"
             data-aos-delay='100' data-aos-duration='500'>
             <div class="progress">

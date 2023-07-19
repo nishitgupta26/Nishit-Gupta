@@ -43,3 +43,18 @@ body{
 .menu{
     color: rgba(255, 255, 255, 0.737);;
 }
+
+/* Scrollbar */
+*::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #76B1DD;
+    /* border-radius: 10px; */
+    border: 1px solid black;
+  }

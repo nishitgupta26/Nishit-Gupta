@@ -8,12 +8,17 @@ import Contact from "./components/contact/Contact";
 import "./app.css";
 import Loading from "./Loading";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
 
   const [loading, setloading] = useState(false);
   useEffect(() => {
     setloading(true);
+    AOS.init();
+    
     setTimeout(() => {
       setloading(false);
     }, 3700);

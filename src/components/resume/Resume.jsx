@@ -1,11 +1,6 @@
 import React from "react";
 import "./resume.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 const Resume = () => {
-    React.useEffect(() => {
-      AOS.init();
-    }, []) 
   return (
     <div  id="resume" className="r">
       <div className="r-container">
@@ -13,7 +8,7 @@ const Resume = () => {
           <h2 className="heading">Resume</h2>
 
           <div class="r-row">
-            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>
               <h3 class="resume-title">Education</h3>
               
               
@@ -58,7 +53,7 @@ const Resume = () => {
               </div>
             </div>
             <div
-              class="col-lg-6 aos-init aos-animate"
+              class="col-lg-6 "
               data-aos="fade-up" data-aos-delay='100' data-aos-duration='500'>
               <h3 class="resume-title">Extra-Currricular</h3>
               <div class="resume-item">
