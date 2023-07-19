@@ -49,11 +49,11 @@ const About = () => {
           x:"0",
           duration:2,
           scrollTrigger: {
-            trigger: ".a-container",
+            trigger: ".right-one",
             scrub: true,
             markers: false,
             start: "top 80%",
-            end: "top 20%",
+            end: "top 40%",
           },
         },
         "a"
@@ -87,7 +87,7 @@ const About = () => {
             // data-aos-delay="100"
             // data-aos-duration="500"
           >
-            <div className=" rightsmall">
+            <div className="rightsmall">
               <h3 className="rightsmall-head">
                 Web-Developer & Competetive Coder
               </h3>
