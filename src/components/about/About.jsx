@@ -1,32 +1,47 @@
-import React,{useRef} from "react";
+import React, { useRef, useMemo } from "react";
 import "./about.css";
 import AboutImag from "../../img/about-imag.jpg";
 
-
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const About = () => {
-  gsap.registerPlugin(CSSPlugin,ScrollTrigger);
+  gsap.registerPlugin(CSSPlugin, ScrollTrigger);
 
   const comp = useRef();
+
+  const tl = useMemo(() => gsap.timeline({ paused: false }), []);
 
   React.useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       // use scoped selectors
-      // gsap.to(".left-one", { opacity:0,
-      //    delay: 1,
-      //   duration: 2,
-      //   scrollTrigger: {
-      //     trigger: ".left-one",scrub: true,markers:true
-      //   } });
+
+      tl.fromTo(
+        ".left-one",
+        {
+          scale: 0.7,
+          opacity: 0.5,
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          scrollTrigger: {
+            trigger: ".left-one",
+            scrub: true,
+            markers: false,
+            start: "top 80%",
+            end: "bottom 30%",
+          },
+        },
+        "a"
+      );
       
     }, comp);
-    
-    return () => ctx.revert();
-    
-  }, []);
+
+    return () =>{ ctx.revert();
+      tl.kill();}
+  }, [tl]);
 
   return (
     <div id="about" ref={comp} className="a">
@@ -37,21 +52,23 @@ const About = () => {
         </div>
         <div className="details">
           <div
-            className=" left-one"
-            data-aos="fade-right"
-            data-aos-delay="100"
-            data-aos-duration="500"
+            className="left-one"
+            // data-aos="fade-right"
+            // data-aos-delay="100"
+            // data-aos-duration="500"
           >
             <img src={AboutImag} alt="" className="about-img" />
           </div>
           <div
-            className=" right-one"
+            className="right-one"
             data-aos="fade-left"
             data-aos-delay="100"
             data-aos-duration="500"
           >
             <div className=" rightsmall">
-              <h3 className="rightsmall-head">Web-Developer & Competetive Coder</h3>
+              <h3 className="rightsmall-head">
+                Web-Developer & Competetive Coder
+              </h3>
               <p className="about-small-desc">
                 Pre-Final Year student at LNMIIT pursuing B.Tech in Computer and
                 Communication Engineering{" "}
