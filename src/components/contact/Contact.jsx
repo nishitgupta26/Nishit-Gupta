@@ -12,8 +12,8 @@ const Contact = () => {
         <div class="contact-title">
           <h2 className="heading">Contact Us</h2>
         </div>
-        <div className="c-row" data-aos="fade-up">
-          <div className="c-left-side">
+        <div className="c-row" >
+          <div className="c-left-side" data-aos="fade-up">
             <div class="things">
               <div class="address">
                 {/* <GeoAlt className='iconsinc'/> */}
@@ -48,10 +48,10 @@ const Contact = () => {
               {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style={{border:0; width: 100%; height: 290px;}} allowfullscreen=""></iframe> */}
             </div>
           </div>
-          <div class=" c-right-side">
+          <div class=" c-right-side" data-aos="fade-up">
             <CForm />
           </div>
-          <div className="c-s-links">
+          <div className="c-s-links" data-aos="fade-up">
             <div className="c-s-links-min">
               <div className="c-s-links-title">
                 <h2>Social-Links</h2>
