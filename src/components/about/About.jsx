@@ -36,6 +36,28 @@ const About = () => {
         },
         "a"
       );
+      gsap.fromTo(
+        ".right-one",
+        {
+          scale: 0.7,
+          opacity: 0,
+          x:"100%",
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          x:"0",
+          duration:2,
+          scrollTrigger: {
+            trigger: ".a-container",
+            scrub: true,
+            markers: false,
+            start: "top 80%",
+            end: "top 20%",
+          },
+        },
+        "a"
+      );
       
     }, comp);
 
@@ -61,9 +83,9 @@ const About = () => {
           </div>
           <div
             className="right-one"
-            data-aos="fade-left"
-            data-aos-delay="100"
-            data-aos-duration="500"
+            // data-aos="fade-left"
+            // data-aos-delay="100"
+            // data-aos-duration="500"
           >
             <div className=" rightsmall">
               <h3 className="rightsmall-head">

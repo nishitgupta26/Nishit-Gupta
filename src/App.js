@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import ReactDOM from "react-dom/client";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
@@ -11,8 +11,8 @@ import Loading from "./Loading";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 function App() {
+  const ap1 = useRef();
 
   const [loading, setloading] = useState(false);
   useEffect(() => {
@@ -21,14 +21,15 @@ function App() {
     
     setTimeout(() => {
       setloading(false);
-    }, 3700);
+    }, 37);
   }, []);
+
   return (
     <div className="app">
       {loading ? (
         <Loading />
       ) : (
-        <div className="app1">
+        <div className="app1" ref={ap1}>
           <Intro />
           <About />
           <Skills />

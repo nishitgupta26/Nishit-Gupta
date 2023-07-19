@@ -1,7 +1,5 @@
 import React from "react";
 import "./contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ArrowRight, GeoAlt } from "react-bootstrap-icons";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CForm from "./CForm.jsx";
 

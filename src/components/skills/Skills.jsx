@@ -1,40 +1,14 @@
-import React,{useRef,useMemo} from "react";
+import React,{useRef} from "react";
 import "./skills.css";
 
 import { gsap } from "gsap";
-import { CSSPlugin } from "gsap/CSSPlugin";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Skills = () => {
-  // gsap.registerPlugin(CSSPlugin, ScrollTrigger);
-
   const comp1 = useRef();
-
-  // const tl = useMemo(() => gsap.timeline({ paused: false,scrollTrigger:".s" }), []);
+  const r1 = useRef();
 
   React.useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      // use scoped selectors
-
-      // tl.fromTo(
-      //   ".skills-content",
-      //   {
-      //     scale: 0.7,
-      //     opacity: 0.5,
-      //   },
-      //   {
-      //     opacity: 1,
-      //     scale: 1,
-      //     scrollTrigger: {
-      //       trigger: ".skills-content",
-      //       scrub: true,
-      //       markers: false,
-      //       start: "top 80%",
-      //       end: "bottom 30%",
-      //     },
-      //   },
-      //   "a"
-      // );
       gsap.fromTo(
         ".progress",
         {
@@ -46,18 +20,13 @@ const Skills = () => {
           opacity:1,
           stagger: 0.3,
           delay: 0.05,
-          duration: 3,
-          // scrollTrigger:".s"
-          
-
+          duration: 2,     
           scrollTrigger: {
-            trigger: ".skills-content",
-            // scrub: true,
-            markers: false,
+            trigger: r1.current,
+            scrub: true,
+            // markers: true,
             start: 'top bottom',
             end: 'bottom center',
-            scrub:true,
-            // end: "bottom 30%",
           },
         },
         "a"
@@ -75,7 +44,7 @@ const Skills = () => {
       <div class="section-title">
           <h2 className="heading">Skills</h2>
         </div>
-        <div class="row skills-content">
+        <div class="row skills-content" ref={r1}>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" 
           // data-aos="fade-up" 
           // data-aos-delay='100' 
