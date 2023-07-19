@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
@@ -8,8 +8,8 @@ import Contact from "./components/contact/Contact";
 import "./app.css";
 import Loading from "./Loading";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const ap1 = useRef();
@@ -18,10 +18,10 @@ function App() {
   useEffect(() => {
     setloading(true);
     AOS.init();
-    
+
     setTimeout(() => {
       setloading(false);
-    }, 37);
+    }, 3700);
   }, []);
 
   return (
@@ -29,13 +29,14 @@ function App() {
       {loading ? (
         <Loading />
       ) : (
-        <div className="app1" ref={ap1}>
-          <Intro />
-          <About />
-          <Skills />
-          <Resume />
-          <Contact />
-        </div>
+        
+          <div className="app1" ref={ap1}>
+            <Intro />
+            <About />
+            <Skills />
+            <Resume />
+            <Contact />
+          </div>
       )}
     </div>
   );
