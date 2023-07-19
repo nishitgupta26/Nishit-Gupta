@@ -53,7 +53,7 @@ const Skills = () => {
           scrollTrigger: {
             trigger: ".skills-content",
             // scrub: true,
-            markers: true,
+            markers: false,
             start: 'top bottom',
             end: 'bottom center',
             scrub:true,
