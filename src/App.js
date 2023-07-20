@@ -14,7 +14,7 @@ function App() {
 
   const [loading, setloading] = useState(false);
   useEffect(() => {
-    const locomotiveScroll =new LocomotiveScroll({lenisOptions:{duration:1.2}});
+    const locomotiveScroll =new LocomotiveScroll({lenisOptions:{duration:1.2,smoothTouch:true}});
     setloading(true);
 
     setTimeout(() => {

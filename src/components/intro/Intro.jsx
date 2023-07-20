@@ -21,7 +21,7 @@ const Intro = () => {
   };
 
   useEffect(()=>{
-    locomotiveScroll = new LocomotiveScroll();
+    locomotiveScroll = new LocomotiveScroll({lenisOptions:{duration:1.2,smoothTouch:true}});
   },[]);
   return (
     <div id="home" className="i">
