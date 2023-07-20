@@ -302,6 +302,9 @@ body {
     .i-title-item{
         font-size: 20px;
     }
+    .i-right{
+        background-attachment:scroll;
+    }
    
 }
 @media (max-width:1200px){
