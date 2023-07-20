@@ -95,6 +95,7 @@
     font-size: medium;
     text-decoration: none;
     color: rgb(111, 113, 128);
+    cursor: pointer;
 }
 
 .menu:visited {

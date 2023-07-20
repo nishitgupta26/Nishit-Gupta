@@ -15,6 +15,7 @@
     "bootstrap-icons": "^1.10.5",
     "gsap": "^3.12.2",
     "gsap-trial": "^3.12.2",
+    "locomotive-scroll": "^5.0.0-beta.8",
     "rc-progress": "^3.4.2",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.10.3",

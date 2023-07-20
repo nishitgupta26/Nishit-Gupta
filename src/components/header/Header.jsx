@@ -2,6 +2,9 @@ import React from 'react'
 import './header.css'
 import LeftMe from "../../img/Nishit_PIC-modified.png" ;
 // import Me from "../../img/Me.png";
+import LocomotiveScroll from "locomotive-scroll";
+
+const locomotiveScroll = new LocomotiveScroll();
 const header = () => {
   return ( 
     <div>
@@ -35,30 +38,30 @@ const header = () => {
             </div>
           </div>
           <div className="i-left-mid">
-            <a href="#home" class="menu ">
+            <p onClick={()=>{locomotiveScroll.scrollTo("#home", {});}} class="menu ">
               <i class="icon bx bx-home"></i>
               <span className="navBut home">Home</span>
-            </a>
-            <a href="#about" class="menu ">
+            </p>
+            <p onClick={()=>{locomotiveScroll.scrollTo("#about", {});}}  class="menu ">
               <i class="icon bx bx-user"></i>
               <span className="navBut about">About</span>
-            </a>
-            <a href="#skills" class="menu ">
+            </p>
+            <p onClick={()=>{locomotiveScroll.scrollTo("#skills", {});}}  class="menu ">
               <i class="icon bx bx-cog"></i>
               <span className="navBut skills">Skills</span>
-            </a>
-            <a href="#resume" class="menu ">
+            </p>
+            <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}  class="menu ">
               <i class="icon bx bx-file-blank"></i>
               <span className="navBut resume">Resume</span>
-            </a>
-            <a href="#resume" class="menu ">
+            </p>
+            <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}} class="menu ">
               <i class="icon bx bx-book-reader"></i>
               <span className="navBut education">Education</span>
-            </a>
-            <a href="#contact" class="menu ">
+            </p>
+            <p onClick={()=>{locomotiveScroll.scrollTo("#contact", {});}} class="menu ">
               <i class="icon fa-regular fa-address-book"></i>
               <span className="navBut contact">Contact</span>
-            </a>
+            </p>
           </div>
           <footer id="footer">
             <div class="i-container">

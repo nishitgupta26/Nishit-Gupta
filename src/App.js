@@ -7,17 +7,15 @@ import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import "./app.css";
 import Loading from "./Loading";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
+import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
   const ap1 = useRef();
 
   const [loading, setloading] = useState(false);
   useEffect(() => {
+    const locomotiveScroll =new LocomotiveScroll({lenisOptions:{duration:1.2}});
     setloading(true);
-    AOS.init();
 
     setTimeout(() => {
       setloading(false);

@@ -1,16 +1,17 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./intro.css";
 import Header from "../header/Header";
-import LeftMe from "../../img/Nishit_PIC-modified.png";
-// import Me from "../../img/Me.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CV from "../../Files/Resume_NISHIT-GUPTA.pdf";
 import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
 import NGlogo from "../../img/ng.png";
 
+import LocomotiveScroll from "locomotive-scroll";
+
+
 const Intro = () => {
+  let locomotiveScroll;
   const menuElement = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const getMenuStyles = (menuOpened) => {
@@ -18,6 +19,10 @@ const Intro = () => {
       return { right: !menuOpened && "-100%" };
     }
   };
+
+  useEffect(()=>{
+    locomotiveScroll = new LocomotiveScroll();
+  },[]);
   return (
     <div id="home" className="i">
       <Header />
@@ -43,28 +48,28 @@ const Intro = () => {
               }}
             >
               <div className="m-menu" style={getMenuStyles(menuOpened)}>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#resume">Resume</a>
-                <a href="#resume">Education</a>
-                <a href="#contact">Contact Us</a>
+                <p onClick={()=>{locomotiveScroll.scrollTo("#home", {});}} >Home</p>
+                <p onClick={()=>{locomotiveScroll.scrollTo("#about", {});}}>About</p>
+                <p onClick={()=>{locomotiveScroll.scrollTo("#skills", {});}}>Skills</p>
+                <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}>Resume</p>
+                <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}>Education</p>
+                <p onClick={()=>{locomotiveScroll.scrollTo("#contact", {});}}>Contact Us</p>
               </div>
             </OutsideClickHandler>
           </div>
         </div>
-        <div className="i-right-wrapper">
-          <h2 className="i-intro">Hello, I am </h2>
-          <h1 className="i-name">Nishit Gupta</h1>
-          <div className="i-title">
-            <div className="i-title-wrapper">
+        <div  className="i-right-wrapper">
+          <h2  className="i-intro">Hello, I am </h2>
+          <h1  className="i-name">Nishit Gupta</h1>
+          <div data-scroll data-scroll-speed="0.05" className="i-title">
+            <div  className="i-title-wrapper">
               <div className="i-title-item">Web Developer</div>
               <div className="i-title-item">Competetive Coder</div>
               <div className="i-title-item">Tech Enthusiast</div>
               <div className="i-title-item">Social Worker</div>
             </div>
           </div>
-          <div class="dwnlod">
+          <div data-scroll data-scroll-speed="0.12" class="dwnlod">
             <a className="button-a" href={CV} download="Resume_Nishit-Gupta">
               <button className="button button-1">Download CV</button>
             </a>

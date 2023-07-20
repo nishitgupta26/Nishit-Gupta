@@ -73,7 +73,7 @@ const About = () => {
           <h2 className="heading">About</h2>
         </div>
         <div className="details">
-          <div
+          <div 
             className="left-one"
             // data-aos="fade-right"
             // data-aos-delay="100"
