@@ -63,6 +63,7 @@
     margin-top: 0px;
 }
 .resume-item{
+    will-change: transform;
     /* display: flex;
     flex-direction: column; */
     padding: 0 0 20px 20px;

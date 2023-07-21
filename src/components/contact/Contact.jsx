@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef ,useMemo} from "react";
 import "./contact.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CForm from "./CForm.jsx";
@@ -12,9 +12,10 @@ const Contact = () => {
   const item3 = useRef(null);
   const head = useRef(null);
   const trig = useRef(null);
+  const tl = useMemo(() => gsap.timeline({ paused: false }), []);
 
   React.useLayoutEffect(() => {
-    gsap.fromTo(
+    tl.fromTo(
       item1.current,
       {
         scale: 0.7,
@@ -34,8 +35,8 @@ const Contact = () => {
         },
       },
       "a"
-    );
-    gsap.fromTo(
+    )
+    .fromTo(
       item2.current,
       {
         scale: 0.7,
@@ -55,8 +56,8 @@ const Contact = () => {
         },
       },
       "a"
-    );
-    gsap.fromTo(
+    )
+    .fromTo(
       item3.current,
       {
         scale: 0.7,
@@ -86,7 +87,7 @@ const Contact = () => {
       // end: "bottom 90%",
       pin: head.current
     });
-  }, []);
+  }, [tl]);
 
   return (
     <div ref={trig} id="contact" className="c">

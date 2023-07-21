@@ -49,12 +49,14 @@ ul{
     /* flex-direction: row; */
 }
 .left-one{
+    will-change: transform;
     width : 30%;
     padding-right: 15px;
     padding-left: 15px;
     height: fit-content;
 }
 .right-one{
+    will-change: transform;
     width : 70%;
     margin-top: 20px;
     padding-right: 15px;

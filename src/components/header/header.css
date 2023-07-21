@@ -10,7 +10,7 @@
     transition: all ease-in-out 0.5s;
     z-index: 300;
     transition: all 0.5s;
-    background: #040b14;
+    /* background: #000e22; */
     overflow-y: auto;
     height: 100vh;
     display: flex;

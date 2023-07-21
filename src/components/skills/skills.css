@@ -52,6 +52,7 @@ p{
     margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 .progress{
+    will-change: transform;
     height: 80px;
     display: block;
     background: none;
