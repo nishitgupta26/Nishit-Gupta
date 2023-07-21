@@ -22,14 +22,23 @@ body{
 .heading{
     text-align: center;
     color: #59B256 !important;
-    /* text-transform: uppercase; */
-    font-weight: 500;
-    font-style: "Poppins";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif !important;
     height: auto !important;
     max-height: auto !important;
     padding-top: 20px !important;
     z-index: 100;
+    font-size: 28px !important;
     backdrop-filter: blur(10px);
+}
+.c-s-links-title h2{
+    font-size: 28px !important;
+}
+@media (max-width:768px){
+    .heading,.c-s-links-title h2{
+        font-size: 20px !important;
+    }
 }
 .skill,.resume-title{
     color: #76B1DD;
