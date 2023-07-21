@@ -13,7 +13,25 @@ body,html{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: #000336;
+    background-color: transparent;
+    z-index: 500;
+    position: fixed;
+    top: 0;
+    pointer-events: none;
+}
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 400;
+    display: flex;
+    pointer-events: none;
+}
+.bar{
+    width: 12.5vw;
+    height: 100svh;
+    background: black;
+    
 }
 .myText{
     display: flex;

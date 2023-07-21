@@ -39,10 +39,11 @@ function App() {
 
   return (
     <div className="app">
-      {loading ? (
+      {/* {loading ? (
         <Loading />
-      ) : (
-        
+      ) : ( */}
+      <>
+          <Loading />
           <div className="app1" ref={ap1}>
             <Intro />
             <About />
@@ -50,7 +51,8 @@ function App() {
             <Resume />
             <Contact />
           </div>
-      )}
+      </>
+      {/* )} */}
     </div>
   );
 }

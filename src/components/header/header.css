@@ -7,7 +7,7 @@
     bottom: 0;
     width: 270px;
     transition: all ease-in-out 0.5s;
-    z-index: 9997;
+    z-index: 300;
     transition: all 0.5s;
     background: #040b14;
     overflow-y: auto;

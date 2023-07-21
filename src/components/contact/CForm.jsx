@@ -1,7 +1,5 @@
 import React from "react";
-import AOS from "aos";
 import "./cform.css";
-import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ArrowRight, GeoAlt } from "react-bootstrap-icons";
 import "bootstrap-icons/font/bootstrap-icons.css";
