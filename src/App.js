@@ -25,7 +25,7 @@ function App() {
           smoothWheel: true,
           smoothTouch: true,
           wheelMultiplier: 1,
-          touchMultiplier: 2,
+          touchMultiplier: 1,
           normalizeWheel: true,
           easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
       },
