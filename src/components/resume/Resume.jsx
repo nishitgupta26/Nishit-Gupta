@@ -45,7 +45,7 @@ const Resume = () => {
         end:"bottom 0%", 
       
         onEnter: () => {
-          gsap.to('body', { duration: 1.5, backgroundColor: '#000'})
+          gsap.to('body', { duration: 1.5, backgroundColor: '#00011b'})
         },
         
         onLeaveBack: () => {

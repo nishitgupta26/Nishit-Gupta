@@ -1,6 +1,7 @@
 .i-left {
     flex: 1;
-    background-color: rgb(4, 11, 20);
+    border-right: 1px dashed #76B1DD;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;

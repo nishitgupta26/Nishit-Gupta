@@ -12,7 +12,7 @@ import LocomotiveScroll from "locomotive-scroll";
 function App() {
   const ap1 = useRef();
 
-  const [loading, setloading] = useState(false);
+  // const [loading, setloading] = useState(false);
   useEffect(() => {
     const locomotiveScroll =new LocomotiveScroll({
       lenisOptions: {
@@ -23,18 +23,18 @@ function App() {
           orientation: 'vertical',
           gestureOrientation: 'vertical',
           smoothWheel: true,
-          smoothTouch: true,
+          // smoothTouch: true,
           wheelMultiplier: 1,
-          touchMultiplier: 1,
+          // touchMultiplier: 1,
           normalizeWheel: true,
           easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
       },
   });
-    setloading(true);
+    // setloading(true);
 
-    setTimeout(() => {
-      setloading(false);
-    }, 3700);
+    // setTimeout(() => {
+    //   setloading(false);
+    // }, 3700);
   }, []);
 
   return (
