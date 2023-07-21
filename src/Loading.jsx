@@ -1,9 +1,8 @@
-import React, { useState, useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef ,useMemo} from "react";
 
 import "./Loading.css";
 
 import { gsap } from "gsap";
-import { TimelineLite } from "gsap/gsap-core.js";
 import { CSSPlugin } from "gsap/CSSPlugin";
 
 const Loading = () => {
@@ -13,7 +12,7 @@ const Loading = () => {
   let comp = useRef();
   const names = ["N", "I", "S", "H", "I", "T", ".", "G", "U", "P", "T", "A"];
 
-  const [tl1] = useState(new TimelineLite({ paused: false }));
+  const tl1 = useMemo(() => gsap.timeline({ paused: false }), []);
   
   useLayoutEffect(() => {
     
@@ -50,6 +49,8 @@ const Loading = () => {
         "c"
       )
       .set(document.body, {overflowY: "auto"})
+      .set(".header", {pointerEvents: "none"})
+      .set(".overlay", {pointerEvents: "none"})
       ;
     }, comp);
 
