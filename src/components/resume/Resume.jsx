@@ -54,7 +54,14 @@ const Resume = () => {
       
         
       });
-      
+      ScrollTrigger.create({
+        trigger: comp2.current,
+        pinSpacing:false,
+        start: "top top",
+        // markers:true, 
+        // end: "bottom 90%",
+        pin: ".heading"
+      });
     }, comp2);
 
     return () =>{ ctx.revert();

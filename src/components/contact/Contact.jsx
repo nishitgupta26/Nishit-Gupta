@@ -4,11 +4,14 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import CForm from "./CForm.jsx";
 
 import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Contact = () => {
   const item1 = useRef(null);
   const item2 = useRef(null);
   const item3 = useRef(null);
+  const head = useRef(null);
+  const trig = useRef(null);
 
   React.useLayoutEffect(() => {
     gsap.fromTo(
@@ -75,13 +78,21 @@ const Contact = () => {
       },
       "a"
     );
+    ScrollTrigger.create({
+      trigger: trig.current,
+      pinSpacing:false,
+      start: "top top",
+      // markers:true, 
+      // end: "bottom 90%",
+      pin: head.current
+    });
   }, []);
 
   return (
-    <div id="contact" className="c">
+    <div ref={trig} id="contact" className="c">
       <div className="c-container">
         <div class="contact-title">
-          <h2 className="heading">Contact Us</h2>
+          <h2 className="heading" ref={head}>Contact Us</h2>
         </div>
         <div className="c-row">
           <div

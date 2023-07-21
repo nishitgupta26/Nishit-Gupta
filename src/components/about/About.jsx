@@ -58,6 +58,14 @@ const About = () => {
         },
         "a"
       );
+      ScrollTrigger.create({
+        trigger: comp.current,
+        pinSpacing:false,
+        start: "top top",
+        markers:false, 
+        // end: "bottom 90%",
+        pin: ".heading"
+      });
       
     }, comp);
 

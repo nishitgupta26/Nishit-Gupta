@@ -2,6 +2,7 @@ import React,{useRef} from "react";
 import "./skills.css";
 
 import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Skills = () => {
   const comp1 = useRef();
@@ -31,7 +32,14 @@ const Skills = () => {
         },
         "a"
       );
-      
+      ScrollTrigger.create({
+        trigger: comp1.current,
+        pinSpacing:false,
+        start: "top top",
+        // markers:true, 
+        // end: "bottom 90%",
+        pin: ".heading"
+      });
     }, comp1);
 
     return () =>{ ctx.revert();
