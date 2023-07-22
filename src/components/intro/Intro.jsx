@@ -7,7 +7,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
 import NGlogo from "../../img/ng.png";
 
-import LocomotiveScroll from "locomotive-scroll";
+// import LocomotiveScroll from "locomotive-scroll";
 
 const Intro = () => {
   let locomotiveScroll;
@@ -19,24 +19,24 @@ const Intro = () => {
     }
   };
 
-  useEffect(() => {
-    locomotiveScroll = new LocomotiveScroll({
-      lenisOptions: {
-        wrapper: window,
-        content: document.documentElement,
-        lerp: 0.1,
-        duration: 1.2,
-        orientation: "vertical",
-        gestureOrientation: "vertical",
-        smoothWheel: true,
-        // smoothTouch: true,
-        wheelMultiplier: 1,
-        // touchMultiplier: 1,
-        normalizeWheel: true,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   locomotiveScroll = new LocomotiveScroll({
+  //     lenisOptions: {
+  //       wrapper: window,
+  //       content: document.documentElement,
+  //       lerp: 0.1,
+  //       duration: 1.2,
+  //       orientation: "vertical",
+  //       gestureOrientation: "vertical",
+  //       smoothWheel: true,
+  //       // smoothTouch: true,
+  //       wheelMultiplier: 1,
+  //       // touchMultiplier: 1,
+  //       normalizeWheel: true,
+  //       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  //     },
+  //   });
+  // }, []);
   return (
     <div id="home" className="i">
       <Header />

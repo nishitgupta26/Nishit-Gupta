@@ -5,6 +5,7 @@ import "./Loading.css";
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 
+
 const Loading = () => {
   gsap.registerPlugin(CSSPlugin);
 
@@ -15,8 +16,10 @@ const Loading = () => {
   const tl1 = useMemo(() => gsap.timeline({ paused: false }), []);
   
   useLayoutEffect(() => {
-    
     let ctx = gsap.context(() => {
+      const myFunction=()=>{
+      console.log("chala");
+      };
       tl1.set(document.body, {overflowY: "hidden"})
       .to(
         item.current,
@@ -51,6 +54,7 @@ const Loading = () => {
       .set(document.body, {overflowY: "auto"})
       .set(".header", {pointerEvents: "none"})
       .set(".overlay", {pointerEvents: "none"})
+      .call(myFunction, []);
       ;
     }, comp);
 

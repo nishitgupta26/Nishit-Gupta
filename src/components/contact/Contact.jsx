@@ -90,7 +90,7 @@ const Contact = () => {
   }, [tl]);
 
   return (
-    <div ref={trig} id="contact" className="c">
+    <div  id="contact" className="c" ref={trig}>
       <div className="c-container">
         <div class="contact-title">
           <h2 className="heading" ref={head}>Contact Us</h2>
