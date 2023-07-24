@@ -24,7 +24,7 @@ const Loading = () => {
       .to(
         item.current,
         {
-          y: 0,
+          y: "0.9vw",
           stagger: 0.1,
           delay: 0.05,
           duration: 0.05,
