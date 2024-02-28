@@ -1,0 +1,7 @@
+{
+    "name": "ng",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }
