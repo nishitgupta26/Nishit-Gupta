@@ -4,7 +4,7 @@ import "./app.css";
 import Loading from "./Loading";
 import '@ionic/react/css/core.css';
 // import {setupIonicReact,IonApp,IonRouterOutlet} from "@ionic/react"
-import {setupIonicReact,IonRouterOutlet,IonHeader,IonToolbar,IonTitle,IonApp,IonPage} from "@ionic/react"
+import {setupIonicReact,IonRouterOutlet,IonHeader,IonToolbar,IonTitle,IonApp,IonPage, useIonRouter} from "@ionic/react"
 import {IonReactRouter} from "@ionic/react-router"
 import {Route, Redirect} from "react-router-dom"
 
@@ -33,6 +33,21 @@ import New1 from "./components/New1";
 setupIonicReact();
 
 function App() {
+  const router = useIonRouter();
+  useEffect(() => {
+    const handler = (ev) => {
+      ev.preventDefault();
+      if (router.canGoBack()) {
+        router.goBack();
+      } else {
+        // Exit the app if there's no previous page
+        window.navigator['app'].exitApp();
+      }
+    };
+
+    window.addEventListener('popstate', handler);
+    return () => window.removeEventListener('popstate', handler);
+  }, [router]);
 return (
   <IonApp>
     <IonReactRouter>
