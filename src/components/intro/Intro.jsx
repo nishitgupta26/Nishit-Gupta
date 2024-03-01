@@ -6,11 +6,15 @@ import CV from "../../Files/Resume_NISHIT-GUPTA.pdf";
 import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
 import NGlogo from "../../img/ng.png";
+// import {Link} from "react-router-dom"
+// import { useNavigate } from 'react-router-dom';
+import { IonButton } from '@ionic/react';
+
 
 // import LocomotiveScroll from "locomotive-scroll";
 
 const Intro = () => {
-  let locomotiveScroll;
+  // const navigate = useNavigate();
   const menuElement = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const getMenuStyles = (menuOpened) => {
@@ -68,12 +72,21 @@ const Intro = () => {
                 <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}>Resume</p>
                 <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}>Education</p>
                 <p onClick={()=>{locomotiveScroll.scrollTo("#contact", {});}}>Contact Us</p> */}
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#resume">Resume</a>
-                <a href="#resume">Education</a>
-                <a href="#contact">Contact Us</a>
+                {/* <div onClick={() => <Redirect to="/" />}>Home</div>
+                <div onClick={() => <Redirect to="/about" />}>About</div>
+                <div onClick={() => <Redirect to="/skills" />}>Skills</div>
+                <div onClick={() => <Redirect to="/resume" />}>Resume</div>
+                <div onClick={() => <Redirect to="/resume" />}>Education</div>
+                <div onClick={() => <Redirect to="/contact" />}>Contact Us</div> */}
+
+                {/* <Link to="/">Home</Link>
+                <Link to="/home">NewABout</Link>
+                <Link to="/contact">Contact</Link> */}
+
+                <IonButton routerLink="/">Home</IonButton>
+                <IonButton routerLink="/resume">Resume</IonButton>
+                <IonButton routerLink="/contact">Contact</IonButton>
+
               </div>
             </OutsideClickHandler>
           </div>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ng</string>
+    <string name="title_activity_main">ng</string>
+    <string name="package_name">io.ionic.ng</string>
+    <string name="custom_url_scheme">io.ionic.ng</string>
+</resources>
