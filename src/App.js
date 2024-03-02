@@ -1,30 +1,32 @@
-import React, { useEffect } from "react";
-import Home from "./components/Home";
+import React from "react";
+import Intro from "./components/intro/Intro";
+import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
+import Resume from "./components/resume/Resume";
+import Contact from "./components/contact/Contact";
 import "./app.css";
-import Loading from "./Loading";
-// import '@ionic/react/css/core.css';
-// import {setupIonicReact,IonApp,IonRouterOutlet} from "@ionic/react"
 import {
   setupIonicReact
 } from "@ionic/react";
-import { IonReactRouter } from "@ionic/react-router";
-import { BrowserRouter, Switch, Route, Redirect,useHistory } from "react-router-dom";
-import New from "./components/New";
-import { App as CapacitorApp } from "@capacitor/app";
-import New1 from "./components/New1";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+// import Home from "./components/Home";
+// import New from "./components/New";
+// import New1 from "./components/New1";
+import { Redirect } from "react-router-dom";
 setupIonicReact();
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={Home} exact={true} />
-        {/* <Route path="/intro" component={Intro} exact={true} />
+        {/* <Route path="/" component={Home} exact={true} /> */}
+        <Route path="/intro" component={Intro} exact={true} />
         <Route path="/about" component={About} exact={true} />
-        <Route path="/skills" component={Skills} exact={true} /> */}
-        <Route path="/resume" component={New1} exact={true} />
-        <Route path="/contact" component={New} exact={true} />
-        {/* <Route exact path="/" render={() => <Redirect to="/home" />} /> */}
+        <Route path="/skills" component={Skills} exact={true} />
+        <Route path="/resume" component={Resume} exact={true} />
+        <Route path="/education" component={Resume} exact={true} />
+        <Route path="/contact" component={Contact} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/intro" />} />
       </Switch>
     </BrowserRouter>
   );

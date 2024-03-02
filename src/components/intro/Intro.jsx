@@ -10,13 +10,26 @@ import {Link} from "react-router-dom"
 // import { useNavigate } from 'react-router-dom';
 import { IonButton } from '@ionic/react';
 import { App as CapacitorApp } from "@capacitor/app";
-
+import { useHistory } from "react-router-dom";
 
 
 // import LocomotiveScroll from "locomotive-scroll";
 
 const Intro = () => {
-  // const navigate = useNavigate();
+  const history = useHistory();
+
+  const exit = async () => {
+    await CapacitorApp.exitApp();
+  };
+  useEffect(() => {
+    const goBack = () => {
+      exit();
+    };
+    CapacitorApp.addListener("backButton", goBack);
+    return () => CapacitorApp.removeAllListeners();
+  }, [history]);
+
+
   const menuElement = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
   const getMenuStyles = (menuOpened) => {
@@ -43,9 +56,6 @@ const Intro = () => {
   //     },
   //   });
   // }, []);
-  const exit = async()=>{
-    await CapacitorApp.exitApp();
-  };
   return (
     <div id="home" className="i">
       <Header />
@@ -71,26 +81,15 @@ const Intro = () => {
               }}
             >
               <div className="m-menu" style={getMenuStyles(menuOpened)}>
-                {/* <p onClick={()=>{locomotiveScroll.scrollTo("#home", {});}} >Home</p>
-                <p onClick={()=>{locomotiveScroll.scrollTo("#about", {});}}>About</p>
-                <p onClick={()=>{locomotiveScroll.scrollTo("#skills", {});}}>Skills</p>
-                <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}>Resume</p>
-                <p onClick={()=>{locomotiveScroll.scrollTo("#resume", {});}}>Education</p>
-                <p onClick={()=>{locomotiveScroll.scrollTo("#contact", {});}}>Contact Us</p> */}
-                {/* <div onClick={() => <Redirect to="/" />}>Home</div>
-                <div onClick={() => <Redirect to="/about" />}>About</div>
-                <div onClick={() => <Redirect to="/skills" />}>Skills</div>
-                <div onClick={() => <Redirect to="/resume" />}>Resume</div>
-                <div onClick={() => <Redirect to="/resume" />}>Education</div>
-                <div onClick={() => <Redirect to="/contact" />}>Contact Us</div> */}
 
-                {/* <Link to="/">Home</Link>*/}
+{/* ................................MOBILE NAVBAR............................................... */}
+                <Link to="/">Home</Link>
+                <Link to="/intro">Intro</Link> 
+                <Link to="/about">About</Link>
+                <Link to="/skills">Skills</Link> 
                 <Link to="/resume">Resume</Link>
                 <Link to="/contact">Contact</Link> 
-
-                {/* <IonButton routerLink="/">Home</IonButton> */}
-                {/* <IonButton routerLink="/resume">Resume</IonButton>
-                <IonButton routerLink="/contact">Contact</IonButton> */}
+{/* ............................................................................... */}
 
               </div>
             </OutsideClickHandler>

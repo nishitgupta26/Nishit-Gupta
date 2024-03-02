@@ -1,16 +1,21 @@
-
-import React from "react";
-import Intro from "./intro/Intro";
-import About from "./about/About";
-import Skills from "./skills/Skills";
-import Resume from "./resume/Resume";
-import Contact from "./contact/Contact";
-import {IonContent, IonPage, IonRefresher,IonRefresherContent} from "@ionic/react"
-import { chevronDownCircleOutline } from 'ionicons/icons';
+import React,{useEffect} from "react";
 import { useHistory } from "react-router-dom";
+import { App as CapacitorApp } from "@capacitor/app";
+
 
 function New() {
   const history = useHistory();
+
+  const goToRoute = (val) => {
+    history.push(`${val}`);
+  };
+  useEffect(() => {
+    const goBack = () => {
+      goToRoute("/");
+    };
+    CapacitorApp.addListener("backButton", goBack);
+    return () => CapacitorApp.removeAllListeners();
+  }, [history]);
   return (
     <>
     {/* <Intro />
