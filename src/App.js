@@ -4,7 +4,7 @@ import "./app.css";
 import Loading from "./Loading";
 import '@ionic/react/css/core.css';
 // import {setupIonicReact,IonApp,IonRouterOutlet} from "@ionic/react"
-import {setupIonicReact,IonRouterOutlet,IonHeader,IonToolbar,IonTitle,IonApp,IonPage, useIonRouter} from "@ionic/react"
+import {setupIonicReact,IonRouterOutlet,IonHeader,IonToolbar,IonTitle,IonApp,IonPage, useIonRouter,RefresherEventDetail} from "@ionic/react"
 import {IonReactRouter} from "@ionic/react-router"
 import {Route, Redirect} from "react-router-dom"
 
@@ -15,6 +15,7 @@ import Skills from "./components/skills/Skills";
 import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import New from "./components/New";
+import { App as CapacitorApp } from '@capacitor/app';
 
 /* Basic CSS for apps built with Ionic */
 import '@ionic/react/css/normalize.css';
@@ -34,6 +35,8 @@ setupIonicReact();
 
 function App() {
   const router = useIonRouter();
+
+
   useEffect(() => {
     const handler = (ev) => {
       ev.preventDefault();
@@ -41,12 +44,12 @@ function App() {
         router.goBack();
       } else {
         // Exit the app if there's no previous page
-        window.navigator['app'].exitApp();
+        CapacitorApp.navigator['app'].exitApp();
       }
     };
 
-    window.addEventListener('popstate', handler);
-    return () => window.removeEventListener('popstate', handler);
+    CapacitorApp.addEventListener('popstate', handler);
+    return () => CapacitorApp.removeEventListener('popstate', handler);
   }, [router]);
 return (
   <IonApp>

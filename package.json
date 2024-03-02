@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@capacitor/android": "^5.7.1",
+    "@capacitor/app": "^5.0.7",
     "@capacitor/core": "^5.7.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
@@ -17,6 +18,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap-icons": "^1.10.5",
     "gsap": "^3.12.2",
+    "ionicons": "^7.2.2",
     "locomotive-scroll": "^5.0.0-beta.8",
     "rc-progress": "^3.4.2",
     "react": "^18.2.0",
