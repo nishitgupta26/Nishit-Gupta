@@ -5,6 +5,7 @@ import CForm from "./CForm.jsx";
 
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { IonContent, IonPage } from "@ionic/react";
 
 const Contact = () => {
   const item1 = useRef(null);
@@ -90,6 +91,7 @@ const Contact = () => {
   }, [tl]);
 
   return (
+    
     <div  id="contact" className="c" ref={trig}>
       <div className="c-container">
         <div class="contact-title">
