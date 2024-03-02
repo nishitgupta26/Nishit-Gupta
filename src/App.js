@@ -59,18 +59,23 @@ function App() {
   //   return () => window.removeEventListener('popstate', handler);
   // }, [router]);
 
-  const history = useHistory();
-  useEffect(() => {
-    const goBack = () => {
-      if (history.length >= 2) {
-        history.goBack();
-      } else {
-        CapacitorApp.exitApp();
-      }
-    };
-    CapacitorApp.addEventListener("backbutton", goBack);
-    return () => CapacitorApp.removeEventListener("backbutton", goBack);
-  }, []);
+  // const history = useHistory();
+  // const exit = async()=>{
+  //   await CapacitorApp.exitApp();
+  // };
+  // useEffect(() => {
+    
+  //   const goBack = () => {
+  //     if (history.length >= 2) {
+  //       exit();
+  //       // history.goBack();
+  //     } else {
+  //       exit();
+  //     }
+  //   };
+  //   CapacitorApp.addEventListener("backbutton", goBack);
+  //   return () => CapacitorApp.removeEventListener("backbutton", goBack);
+  // }, [history]);
 
   return (
     <BrowserRouter>

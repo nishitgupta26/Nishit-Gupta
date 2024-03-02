@@ -9,6 +9,8 @@ import NGlogo from "../../img/ng.png";
 // import {Link} from "react-router-dom"
 // import { useNavigate } from 'react-router-dom';
 import { IonButton } from '@ionic/react';
+import { App as CapacitorApp } from "@capacitor/app";
+
 
 
 // import LocomotiveScroll from "locomotive-scroll";
@@ -41,6 +43,9 @@ const Intro = () => {
   //     },
   //   });
   // }, []);
+  const exit = async()=>{
+    await CapacitorApp.exitApp();
+  };
   return (
     <div id="home" className="i">
       <Header />
@@ -103,7 +108,7 @@ const Intro = () => {
             </div>
           </div>
           <div data-scroll data-scroll-speed="0.12" class="dwnlod">
-            <a className="button-a" href={CV} download="Resume_Nishit-Gupta">
+            <a onClick={exit} className="button-a" href={CV} download="Resume_Nishit-Gupta">
               <button className="button button-1">Download CV</button>
             </a>
             <a
