@@ -1,26 +1,13 @@
-import React, { useRef, useMemo ,useEffect} from "react";
+import React, { useRef, useMemo } from "react";
 import "./about.css";
 import AboutImag from "../../img/about-imag.jpg";
-import { useHistory } from "react-router-dom";
-import { App as CapacitorApp } from "@capacitor/app";
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useBackButton } from "../../customHooks/useBackButton";
 
 const About = () => {
-  const history = useHistory();
-
-  const goToRoute = (val) => {
-    history.push(`${val}`);
-  };
-  useEffect(() => {
-    const goBack = () => {
-      goToRoute("/");
-    };
-    CapacitorApp.addListener("backButton", goBack);
-    return () => CapacitorApp.removeAllListeners();
-  }, [history]);  
-
+  useBackButton("/");
 
   gsap.registerPlugin(CSSPlugin, ScrollTrigger);
 

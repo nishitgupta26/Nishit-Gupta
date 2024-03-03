@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-import ReactDOM from "react-dom/client";
+import React, { useState, useRef } from "react";
 import "./intro.css";
 import Header from "../header/Header";
 import CV from "../../Files/Resume_NISHIT-GUPTA.pdf";
@@ -8,27 +7,14 @@ import OutsideClickHandler from "react-outside-click-handler";
 import NGlogo from "../../img/ng.png";
 import {Link} from "react-router-dom"
 // import { useNavigate } from 'react-router-dom';
-import { IonButton } from '@ionic/react';
-import { App as CapacitorApp } from "@capacitor/app";
-import { useHistory } from "react-router-dom";
+import AppUrlListener from "../../Listeners/AppUrlListener";
+import { useBackButton } from "../../customHooks/useBackButton";
 
 
 // import LocomotiveScroll from "locomotive-scroll";
 
 const Intro = () => {
-  const history = useHistory();
-
-  const exit = async () => {
-    await CapacitorApp.exitApp();
-  };
-  useEffect(() => {
-    const goBack = () => {
-      exit();
-    };
-    CapacitorApp.addListener("backButton", goBack);
-    return () => CapacitorApp.removeAllListeners();
-  }, [history]);
-
+  useBackButton("exit");
 
   const menuElement = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
@@ -58,6 +44,7 @@ const Intro = () => {
   // }, []);
   return (
     <div id="home" className="i">
+      <AppUrlListener></AppUrlListener>
       <Header />
       <div className="i-right">
         <div className="right-upper">
@@ -107,7 +94,7 @@ const Intro = () => {
             </div>
           </div>
           <div data-scroll data-scroll-speed="0.12" class="dwnlod">
-            <a onClick={exit} className="button-a" href={CV} download="Resume_Nishit-Gupta">
+            <a className="button-a" href={CV} download="Resume_Nishit-Gupta">
               <button className="button button-1">Download CV</button>
             </a>
             <a

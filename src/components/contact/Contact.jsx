@@ -1,26 +1,13 @@
-import React, { useRef ,useMemo,useEffect} from "react";
+import React, { useRef ,useMemo} from "react";
 import "./contact.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CForm from "./CForm.jsx";
-import { useHistory } from "react-router-dom";
-import { App as CapacitorApp } from "@capacitor/app";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { IonContent, IonPage } from "@ionic/react";
+import { useBackButton } from "../../customHooks/useBackButton.js";
 
 const Contact = () => {
-  const history = useHistory();
-
-  const goToRoute = (val) => {
-    history.push(`${val}`);
-  };
-  useEffect(() => {
-    const goBack = () => {
-      goToRoute("/");
-    };
-    CapacitorApp.addListener("backButton", goBack);
-    return () => CapacitorApp.removeAllListeners();
-  }, [history]);
+  useBackButton("/")
 
   gsap.registerPlugin( ScrollTrigger);
   const item1 = useRef(null);
