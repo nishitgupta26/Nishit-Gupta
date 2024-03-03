@@ -7,7 +7,7 @@ const AppUrlListener = () => {
     let history = useHistory();
     useEffect(() => {
       App.addListener('appUrlOpen', (event) => {
-        const slug = event.url.split('.com').pop();
+        const slug = event.url.split('.app').pop();
         if (slug) {
           history.push(slug);
         }
