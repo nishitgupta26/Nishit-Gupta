@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { App as CapacitorApp } from "@capacitor/app";
 
 export const useBackButton = (route) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const exit = async () => {
@@ -11,7 +11,7 @@ export const useBackButton = (route) => {
     };
 
     const goToRoute = (val) => {
-        history.push(`${val}`);
+      navigate(`${val}`);
       };
 
     const goBack = () => {
@@ -25,5 +25,5 @@ export const useBackButton = (route) => {
 
     CapacitorApp.addListener("backButton", goBack);
     return () => CapacitorApp.removeAllListeners();
-  }, [history,route]); // Re-run effect when history changes
+  }, [navigate,route]); // Re-run effect when history changes
 };

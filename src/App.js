@@ -8,26 +8,30 @@ import "./app.css";
 import {
   setupIonicReact
 } from "@ionic/react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from "./components/Home";
 // import New from "./components/New";
 // import New1 from "./components/New1";
-import { Redirect } from "react-router-dom";
-setupIonicReact();
+import { Navigate } from "react-router-dom";
+// setupIonicReact();
 
 function App() {
   return (
     <BrowserRouter>
-      <Switch>
+      <Routes>
         {/* <Route path="/" component={Home} exact={true} /> */}
-        <Route path="/intro" component={Intro} exact={true} />
-        <Route path="/about" component={About} exact={true} />
-        <Route path="/skills" component={Skills} exact={true} />
-        <Route path="/resume" component={Resume} exact={true} />
-        <Route path="/education" component={Resume} exact={true} />
-        <Route path="/contact" component={Contact} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/intro" />} />
-      </Switch>
+        <Route path="/" element={<Intro />} />
+        <Route path="/intro" element={<Intro />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />}/>
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/education" element={<Resume />} />
+        <Route path="/contact" element={<Contact />}/>
+        <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+    />
+      </Routes>
     </BrowserRouter>
   );
 }

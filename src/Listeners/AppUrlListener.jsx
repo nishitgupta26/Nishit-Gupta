@@ -1,18 +1,18 @@
 import { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { App } from '@capacitor/app';
 
 // FOR DEEP LINKS , calling it in Intro
 const AppUrlListener = () => {
-    let history = useHistory();
+    let navigate = useNavigate();
     useEffect(() => {
       App.addListener('appUrlOpen', (event) => {
         const slug = event.url.split('.app').pop();
         if (slug) {
-          history.push(slug);
+          navigate(slug);
         }
       });
-    }, [history]);
+    }, [navigate]);
   
     return null;
 };
