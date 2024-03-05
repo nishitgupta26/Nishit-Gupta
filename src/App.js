@@ -9,11 +9,12 @@ import {
   setupIonicReact
 } from "@ionic/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Home from "./components/Home";
-// import New from "./components/New";
-// import New1 from "./components/New1";
 import { Navigate } from "react-router-dom";
-// setupIonicReact();
+import { StatusBar } from "@capacitor/status-bar";
+import { Capacitor } from "@capacitor/core";
+
+setupIonicReact();
+Capacitor.isNativePlatform() && StatusBar.setBackgroundColor({ color: "#000336" });
 
 function App() {
   return (
