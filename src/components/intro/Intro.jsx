@@ -9,7 +9,9 @@ import {Link} from "react-router-dom"
 // import { useNavigate } from 'react-router-dom';
 import AppUrlListener from "../../Listeners/AppUrlListener";
 import { useBackButton } from "../../customHooks/useBackButton";
-
+// import { Filesystem, Directory } from '@capacitor/filesystem';
+// import  { Browser } from '@capacitor/browser';
+import  {Capacitor} from '@capacitor/core'
 
 // import LocomotiveScroll from "locomotive-scroll";
 
@@ -24,24 +26,25 @@ const Intro = () => {
     }
   };
 
-  // useEffect(() => {
-  //   locomotiveScroll = new LocomotiveScroll({
-  //     lenisOptions: {
-  //       wrapper: window,
-  //       content: document.documentElement,
-  //       lerp: 0.1,
-  //       duration: 1.2,
-  //       orientation: "vertical",
-  //       gestureOrientation: "vertical",
-  //       smoothWheel: true,
-  //       // smoothTouch: true,
-  //       wheelMultiplier: 1,
-  //       // touchMultiplier: 1,
-  //       normalizeWheel: true,
-  //       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  //     },
+  // const downloadFile = async () => {
+  //   const response = await fetch('https://nishitgupta.com/static/media/Resume_NISHIT-GUPTA.94560955de7147b728e5.pdf');
+  //   const blob = await response.blob();
+  //   const data = await new Response(blob).arrayBuffer();
+  //   const base64Data = btoa(
+  //     new Uint8Array(data)
+  //       .reduce((data, byte) => data + String.fromCharCode(byte), '')
+  //   );
+
+  //   const result = await Filesystem.writeFile({
+  //     path: 'Resume_NISHIT-GUPTA.pdf',
+  //     data: base64Data,
+  //     directory: Directory.Documents,
+  //     recursive: true
   //   });
-  // }, []);
+
+  //   Browser.open({ url: result.uri });
+  // };
+  
   return (
     <div id="home" className="i">
       <AppUrlListener></AppUrlListener>
@@ -94,7 +97,10 @@ const Intro = () => {
             </div>
           </div>
           <div data-scroll data-scroll-speed="0.12" class="dwnlod">
-            <a className="button-a" href={CV} download="Resume_Nishit-Gupta">
+            <a 
+            // onClick={()=>{Capacitor.isNativePlatform()&&downloadFile();}} 
+             href={"https://nishitgupta.com/static/media/Resume_NISHIT-GUPTA.94560955de7147b728e5.pdf"} 
+             target="__blank">
               <button className="button button-1">Download CV</button>
             </a>
             <a
