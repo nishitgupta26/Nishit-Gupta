@@ -109,7 +109,7 @@ const About = () => {
                     <li>
                       <i class="fa-solid fa-chevron-right"></i>
                       <strong className="strng">Age:</strong>
-                      <span>19</span>
+                      <span>20</span>
                     </li>
                     <li>
                       <i class="fa-solid fa-chevron-right"></i>

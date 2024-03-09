@@ -93,7 +93,7 @@ const Resume = () => {
                   </em>
                 </p>
                 <p>
-                  CGPA(till 4th sem) : <strong>6.83</strong>
+                  CGPA(till 4th sem) : <strong>7.21</strong>
                 </p>
               </div>
               <div class="resume-item">
