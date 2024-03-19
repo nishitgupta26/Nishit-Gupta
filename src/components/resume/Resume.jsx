@@ -136,17 +136,10 @@ const Resume = () => {
                 </p>
               </div>
               <div class="resume-item">
-                <h4>Open Source Contributor</h4>
-                <h5>2023 - Present</h5>
-                <p>
-                  <em>Open Source Contributor @SSOC'23(Social Summer Of Code Season 2 )</em>
-                </p>
-              </div>
-              <div class="resume-item">
                 <h4>Moz-Hacks</h4>
                 <h5>2023</h5>
                 <p>
-                  <em>Participated and got 1st place in a intra college Hackathon organised by Mozilla Firefox Team at LNMIIT</em>
+                  <em>Participated a Hackathon organised by Mozilla Firefox Team at LNMIIT</em>
                 </p>
                 <p>Created a working cross-browser extension using Google Search API</p>
               </div>
@@ -154,7 +147,7 @@ const Resume = () => {
                 <h4>LNMHacks 5.0</h4>
                 <h5>2023</h5>
                 <p>
-                  <em>Participated a inter college Hackathon organised by LNMIIT</em>
+                  <em>Participated in a inter college Hackathon organised by LNMIIT</em>
                 </p>
                 <p>Created a clone of Chat-GPT using Open API</p>
               </div>
