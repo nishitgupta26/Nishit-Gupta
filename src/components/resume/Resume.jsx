@@ -93,7 +93,7 @@ const Resume = () => {
                   </em>
                 </p>
                 <p>
-                  CGPA(till 4th sem) : <strong>7.21</strong>
+                  CGPA(till 5th sem) : <strong>7.21</strong>
                 </p>
               </div>
               <div class="resume-item">
@@ -139,7 +139,7 @@ const Resume = () => {
                 <h4>Moz-Hacks</h4>
                 <h5>2023</h5>
                 <p>
-                  <em>Participated a Hackathon organised by Mozilla Firefox Team at LNMIIT</em>
+                  <em>Participated in a Hackathon organised by Mozilla Firefox Team at LNMIIT</em>
                 </p>
                 <p>Created a working cross-browser extension using Google Search API</p>
               </div>
